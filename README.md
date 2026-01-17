@@ -4,7 +4,7 @@
 This repository contains the complete code and data processing pipeline for the study:
 
 > **"The Impact of FHIR Interoperability Debt on Clinical AI Reliability: A Stress-Testing Framework and Simulation Study"**  
-> *International Journal of Medical Informatics (IJMI) Submission*
+> *Health Informatics Journal Submission*
 
 ## 📋 Study Overview
 
@@ -25,7 +25,7 @@ This research quantifies how **FHIR (Fast Healthcare Interoperability Resources)
 ### Installation
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/DeBT-FHIR.git
+git clone https://github.com/krutarth007/DeBT-FHIR.git
 cd DeBT-FHIR
 ```
 ## Install dependencies
@@ -113,7 +113,7 @@ outputs/figures/Figure2_Statistical_Significance.png/pdf - Effect size visualiza
 
 ## Study Summary:
 outputs/study_summary_YYYYMMDD_HHMMSS.md - Human-readable summary  
-outputs/IJMI_Submission_Summary_*.json - Manuscript-ready summary  
+outputs/HIJ_Submission_Summary_*.json - Manuscript-ready summary  
 
 ## ⚙️ Configuration
 ### Path Configuration (Edit if needed):
@@ -229,7 +229,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 **HL7 FHIR Community**: For the interoperability standards
 
-**IJMI Reviewers**: For their valuable feedback
+**HIJ Reviewers**: For their valuable feedback
 
 ## 📧 Contact
 For questions about this study or code:  
