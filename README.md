@@ -113,7 +113,7 @@ outputs/figures/Figure2_Statistical_Significance.png/pdf - Effect size visualiza
 
 ## Study Summary:
 outputs/study_summary_YYYYMMDD_HHMMSS.md - Human-readable summary  
-outputs/JAMIA_Submission_Summary_*.json - Manuscript-ready summary  
+outputs/IJMI_Submission_Summary_*.json - Manuscript-ready summary  
 
 ## ⚙️ Configuration
 ### Path Configuration (Edit if needed):
