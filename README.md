@@ -1,4 +1,4 @@
-# DeBT-FHIR: Quantifying Clinical AI Sensitivity to FHIR Interoperability Debt
+# DeBT-FHIR: Interoperability Debt Simulation on MIMIC-IV FHIR Data
 
 
 This repository contains the complete code and data processing pipeline for the study:
