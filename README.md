@@ -3,8 +3,8 @@
 
 This repository contains the complete code and data processing pipeline for the study:
 
-> **"Quantifying the Impact of FHIR Interoperability Debt on Clinical Machine Learning Performance: A Large-Scale Simulation Study Using MIMIC-IV"**  
-> *Journal of the American Medical Informatics Association (JAMIA) Submission*
+> **"The Impact of FHIR Interoperability Debt on Clinical AI Reliability: A Stress-Testing Framework and Simulation Study"**  
+> *International Journal of Medical Informatics (IJMI) Submission*
 
 ## 📋 Study Overview
 
@@ -229,7 +229,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 **HL7 FHIR Community**: For the interoperability standards
 
-**JAMIA Reviewers**: For their valuable feedback
+**IJMI Reviewers**: For their valuable feedback
 
 ## 📧 Contact
 For questions about this study or code:  
