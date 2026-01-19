@@ -1,8 +1,8 @@
-# DeBT-FHIR RESEARCH v10.0 — COMPLETE HIJ PUBLICATION PIPELINE
+# DeBT-FHIR RESEARCH v10.0 — COMPLETE JOMS PUBLICATION PIPELINE
 # -----------------------------------------------------------------------------
 # Title: Quantifying Clinical AI Sensitivity to Interoperability Debt: 
 #        A FHIR-Based Multi-Institutional Simulation Study
-# Target Journal: HIJ (Health Informatics Journal)
+# Target Journal: JOMS (Journal of Medical Systems)
 # Dataset: MIMIC-IV FHIR-converted (9000 patients)
 # Author: Krutarth Patel
 # -----------------------------------------------------------------------------
@@ -694,12 +694,12 @@ def calculate_robust_bootstrap_ci(X, y, debt_intensity, n_bootstraps=300):
 # MAIN EXPERIMENT
 # ============================================================================
 
-def run_complete_HIJ_experiment():
+def run_complete_JOMS_experiment():
     """
-    Complete HIJ experiment pipeline
+    Complete JOMS experiment pipeline
     """
     print("="*100)
-    print("DeBT-FHIR v10.0: COMPLETE HIJ PUBLICATION PIPELINE")
+    print("DeBT-FHIR v10.0: COMPLETE JOMS PUBLICATION PIPELINE")
     print("="*100)
     
     # Load FHIR data
@@ -884,7 +884,7 @@ def run_complete_HIJ_experiment():
     
     # Save results
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    results_file = f"HIJ_fhir_debt_results_COMPLETE_v10_{timestamp}.csv"
+    results_file = f"JOMS_fhir_debt_results_COMPLETE_v10_{timestamp}.csv"
     results_df.to_csv(results_file, index=False)
     print(f"\n💾 Results saved to: {results_file}")
     
@@ -900,12 +900,12 @@ def run_complete_HIJ_experiment():
 # PUBLICATION SUMMARIES AND FIGURES
 # ============================================================================
 
-def create_HIJ_publication_summary(results_df, stats_results, df):
+def create_JOMS_publication_summary(results_df, stats_results, df):
     """
-    Create complete HIJ publication summary
+    Create complete JOMS publication summary
     """
     print("\n" + "="*80)
-    print("CREATING HIJ PUBLICATION SUMMARY")
+    print("CREATING JOMS PUBLICATION SUMMARY")
     print("="*80)
     
     def get_auc_interpretation(auc):
@@ -940,7 +940,7 @@ KEYWORDS: FHIR; Interoperability; Clinical AI; Data Quality; Machine Learning; M
     
     summary = {
         "title": "Quantifying Clinical AI Sensitivity to Interoperability Debt: A FHIR-Based Multi-Institutional Simulation Study",
-        "journal": "Health Informatics Journal (HIJ)",
+        "journal": "Journal of Medical Systems (JOMS)",
         "author": "Krutarth Patel",
         "date": datetime.now().strftime("%Y-%m-%d"),
         "status": "READY FOR SUBMISSION",
@@ -986,14 +986,14 @@ KEYWORDS: FHIR; Interoperability; Clinical AI; Data Quality; Machine Learning; M
         }
     
     # Save JSON summary
-    json_file = f"HIJ_Submission_Summary_{timestamp}.json"
+    json_file = f"JOMS_Submission_Summary_{timestamp}.json"
     with open(json_file, 'w', encoding='utf-8') as f:
         json.dump(summary, f, indent=2, cls=NumpyEncoder)
     
     # Create markdown report with proper encoding
-    md_file = f"HIJ_Submission_Summary_{timestamp}.md"
+    md_file = f"JOMS_Submission_Summary_{timestamp}.md"
     with open(md_file, 'w', encoding='utf-8') as f:
-        f.write(f"# HIJ Submission Summary\n\n")
+        f.write(f"# JOMS Submission Summary\n\n")
         f.write(f"**Title:** {summary['title']}\n")
         f.write(f"**Author:** {summary['author']}\n")
         f.write(f"**Date:** {summary['date']}\n")
@@ -1022,8 +1022,8 @@ KEYWORDS: FHIR; Interoperability; Clinical AI; Data Quality; Machine Learning; M
         f.write("\n## Next Steps for Submission\n")
         f.write("1. **Prepare Manuscript:** Use the abstract template above\n")
         f.write("2. **Create Figures:** Generate from the results data\n")
-        f.write("3. **Format References:** Follow HIJ guidelines\n")
-        f.write("4. **Submit Online:** https://mc.manuscriptcentral.com/HIJ\n")
+        f.write("3. **Format References:** Follow JOMS guidelines\n")
+        f.write("4. **Submit Online:** https://mc.manuscriptcentral.com/JOMS\n")
         f.write("5. **Review Timeline:** 8-12 weeks expected\n")
     
     print(f"\n✅ Created publication summary files:")
@@ -1034,7 +1034,7 @@ KEYWORDS: FHIR; Interoperability; Clinical AI; Data Quality; Machine Learning; M
 
 def create_publication_figures(results_df, stats_results):
     """
-    Create publication-quality figures for HIJ
+    Create publication-quality figures for JOMS
     """
     os.makedirs('publication_figures', exist_ok=True)
     
@@ -1120,7 +1120,7 @@ def main():
     Main execution function
     """
     print("="*80)
-    print("HIJ PUBLICATION PIPELINE v10.0 - COMPLETE VERSION")
+    print("JOMS PUBLICATION PIPELINE v10.0 - COMPLETE VERSION")
     print("="*80)
     print("\nThis pipeline includes:")
     print("1. Data loading and feature extraction")
@@ -1132,12 +1132,12 @@ def main():
     
     try:
         # Run the complete experiment
-        print("\n🚀 Starting complete HIJ experiment...")
-        results_df, stats_results, df = run_complete_HIJ_experiment()
+        print("\n🚀 Starting complete JOMS experiment...")
+        results_df, stats_results, df = run_complete_JOMS_experiment()
         
         # Create publication summary
         print("\n📋 Creating publication summary...")
-        summary, json_file, md_file = create_HIJ_publication_summary(results_df, stats_results, df)
+        summary, json_file, md_file = create_JOMS_publication_summary(results_df, stats_results, df)
         
         # Ask about figures
         create_figs = input("\n📊 Create publication-quality figures? (y/n): ").lower()
@@ -1149,7 +1149,7 @@ def main():
         print("="*80)
         
         # Display key findings
-        print("\n📊 KEY FINDINGS FOR HIJ SUBMISSION:")
+        print("\n📊 KEY FINDINGS FOR JOMS SUBMISSION:")
         print("-" * 60)
         
         for task in stats_results.keys():
@@ -1166,23 +1166,23 @@ def main():
         print("\n" + "="*80)
         print("📁 FILES CREATED:")
         print("-" * 60)
-        print(f"1. Results CSV: HIJ_fhir_debt_results_COMPLETE_v10_*.csv")
+        print(f"1. Results CSV: JOMS_fhir_debt_results_COMPLETE_v10_*.csv")
         print(f"2. Statistics JSON: statistical_analysis_results_v10_*.json")
         print(f"3. Publication Summary JSON: {json_file}")
         print(f"4. Publication Summary MD: {md_file}")
         print(f"5. Figures: publication_figures/*.png and *.pdf (if created)")
         
         print("\n" + "="*80)
-        print("📝 NEXT STEPS FOR HIJ SUBMISSION:")
+        print("📝 NEXT STEPS FOR JOMS SUBMISSION:")
         print("-" * 60)
         print("1. Write manuscript using abstract template")
         print("2. Include figures from publication_figures/")
         print("3. Reference exact numbers from summary files")
-        print("4. Submit to: https://mc.manuscriptcentral.com/HIJ")
+        print("4. Submit to: https://mc.manuscriptcentral.com/JOMS")
         print("5. Expected review timeline: 8-12 weeks")
         
         print("\n" + "="*80)
-        print("✅ YOUR STUDY IS READY FOR HIJ SUBMISSION!")
+        print("✅ YOUR STUDY IS READY FOR JOMS SUBMISSION!")
         print("="*80)
         
     except Exception as e:
