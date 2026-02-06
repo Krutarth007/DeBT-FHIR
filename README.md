@@ -1,21 +1,29 @@
-# DeBT-FHIR: Interoperability Debt Simulation on MIMIC-IV FHIR Data
+# FHIR-StressTest: Quantifying Data Quality Degradation in Clinical AI Pipelines
 
 
-This repository contains the complete code and data processing pipeline for the study:
+This repository contains the official implementation of the DeBT-FHIR framework, used to quantify the sensitivity of clinical prediction models to data quality degradation in HL7 FHIR-based health information exchanges.
 
-> **"The Impact of FHIR Interoperability Debt on Clinical AI Reliability: A Stress-Testing Framework and Simulation Study"**  
-> *Journal of Medical Systems Submission*
+> **"The Reliability Cliff: A Simulation Study of FHIR Data Quality Degradation and Its Impact on Clinical Prediction Models"**  
+> *Health Information Science and Systems*
 
-## 📋 Study Overview
+## 📌 Overview
 
-This research quantifies how **FHIR (Fast Healthcare Interoperability Resources) interoperability debt**—accumulated data quality issues during health data exchange—impacts the reliability of clinical artificial intelligence (AI) models. Using a cohort of 9,000 patients from MIMIC-IV converted to FHIR format, we simulate real-world data exchange degradation and evaluate its effect on two high-stakes prediction tasks: **in-hospital mortality** and **30-day readmission**.
+As healthcare moves toward FHIR-based AI ecosystems, the integrity of clinical data pipelines becomes critical. This study introduces a high-fidelity simulation framework to "stress-test" clinical AI before deployment. Using a cohort of 9,000 patients from the MIMIC-IV database, we simulate seven real-world degradation archetypes across eleven intensity levels.
 
-### Key Findings:
-- **Critical Threshold:** 70% interoperability debt intensity
-- **Maximum Degradation:** 2.9% AUC reduction (mortality), 7.9% AUC reduction (readmission)
-- **Strong Correlation:** Spearman ρ = -0.847 for mortality (p < 0.001)
+### Key Findings: The "Reliability Cliff"
+Our research identifies a critical threshold at 70% degradation intensity ($L=0.7$), where predictive reliability for mortality and readmission models fails catastrophically, dropping significantly outside baseline 95% confidence intervals.
 
-## 🚀 Quick Start (For Reviewers)
+## 🚀 Key Features
+**FHIR ETL Pipeline:** Transforms raw MIMIC-IV relational data into standardized FHIR R4 Bundles (Patient, Encounter, Observation, Condition).
+**Seven Degradation Archetypes:**
+- Random & Systematic Missingness
+- Measurement Noise (Gaussian)
+- Structural Resource Loss
+- Outlier Corruption (Unit/Decimal errors)
+- Precision Reduction (Rounding)
+- Imputation Artifacts
+**Robust Evaluation:** Automated ensemble modeling (Logistic Regression + Random Forest) with 500 bootstrap iterations per level.
+**Statistical Profiling:** Built-in calculation of Cohen’s d effect sizes and Spearman rank correlations for performance decay.
 
 ### Prerequisites
 - Python 3.9 or higher
@@ -206,21 +214,12 @@ Ensure all file paths are correct
 Verify MIMIC-IV data integrity  
 
 ## 📝 Citation
-If you use this code or reference this study, please cite:  
+If you use this framework or the "Reliability Cliff" methodology in your research, please cite:
 
-```
-bibtex
-@article{patel2024debtfhirsensitivity,
-  title={Quantifying the Impact of FHIR Interoperability Debt on Clinical Machine Learning Performance: A Large-Scale Simulation Study Using MIMIC-IV},
-  author={Patel, Krutarth},
-  journal={Journal of the American Medical Informatics Association},
-  year={2024},
-  note={Manuscript submitted for publication}
-}
-```
+The Reliability Cliff: A Simulation Study of FHIR Data Quality Degradation and Its Impact on Clinical Prediction Models. Health Information Systems and Services (HISS), Springer.
 
 ## 📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.  
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🙏 Acknowledgments
 **MIMIC-IV Database**: Massachusetts Institute of Technology Laboratory for Computational Physiology
