@@ -228,7 +228,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 **HL7 FHIR Community**: For the interoperability standards
 
-**JOMS Reviewers**: For their valuable feedback
+**IJDSA Reviewers**: For their valuable feedback
 
 ## 📧 Contact
 For questions about this study or code:  
