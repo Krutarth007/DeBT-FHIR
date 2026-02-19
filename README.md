@@ -3,15 +3,15 @@
 
 This repository contains the official implementation of the DeBT-FHIR framework, used to quantify the sensitivity of clinical prediction models to data quality degradation in HL7 FHIR-based health information exchanges.
 
-> **"The Reliability Cliff: A Simulation Study of FHIR Data Quality Degradation and Its Impact on Clinical Prediction Models"**  
-> *Health Information Science and Systems*
+> **"A Simulation-Based Framework for Quantifying Predictive Model Robustness Under Progressive Structured Data Degradation"**  
+> *International Journal of Data Science and Analytics*
 
 ## 📌 Overview
 
 As healthcare moves toward FHIR-based AI ecosystems, the integrity of clinical data pipelines becomes critical. This study introduces a high-fidelity simulation framework to "stress-test" clinical AI before deployment. Using a cohort of 9,000 patients from the MIMIC-IV database, we simulate seven real-world degradation archetypes across eleven intensity levels.
 
 ### Key Findings: The "Reliability Cliff"
-Our research identifies a critical threshold at 70% degradation intensity ($L=0.7$), where predictive reliability for mortality and readmission models fails catastrophically, dropping significantly outside baseline 95% confidence intervals.
+Our research identifies a critical threshold at 70% degradation intensity (L=0.7), where predictive reliability for mortality and readmission models fails catastrophically, dropping significantly outside baseline 95% confidence intervals.
 
 ## 🚀 Key Features
 **FHIR ETL Pipeline:** Transforms raw MIMIC-IV relational data into standardized FHIR R4 Bundles (Patient, Encounter, Observation, Condition).
@@ -121,7 +121,7 @@ outputs/figures/Figure2_Statistical_Significance.png/pdf - Effect size visualiza
 
 ## Study Summary:
 outputs/study_summary_YYYYMMDD_HHMMSS.md - Human-readable summary  
-outputs/JOMS_Submission_Summary_*.json - Manuscript-ready summary  
+outputs/IJDSA_Submission_Summary_*.json - Manuscript-ready summary  
 
 ## ⚙️ Configuration
 ### Path Configuration (Edit if needed):
@@ -216,7 +216,7 @@ Verify MIMIC-IV data integrity
 ## 📝 Citation
 If you use this framework or the "Reliability Cliff" methodology in your research, please cite:
 
-The Reliability Cliff: A Simulation Study of FHIR Data Quality Degradation and Its Impact on Clinical Prediction Models. Health Information Systems and Services (HISS), Springer.
+A Simulation-Based Framework for Quantifying Predictive Model Robustness Under Progressive Structured Data Degradation. International Journal of Data Science and Analytics (IJDSA), Springer.
 
 ## 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
