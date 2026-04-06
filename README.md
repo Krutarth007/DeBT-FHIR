@@ -3,8 +3,8 @@
 
 This repository contains the official implementation of the DeBT-FHIR framework, used to quantify the sensitivity of clinical prediction models to data quality degradation in HL7 FHIR-based health information exchanges.
 
-> **"A Simulation-Based Framework for Quantifying Predictive Model Robustness Under Progressive Structured Data Degradation"**  
-> *International Journal of Data Science and Analytics*
+> **"The Impact of FHIR Interoperability Debt on Clinical AI Reliability: A Stress-Testing Framework and Simulation Study"**  
+> *Journal of Intelligent Learning Systems and Applications*
 
 ## 📌 Overview
 
