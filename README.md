@@ -121,7 +121,7 @@ outputs/figures/Figure2_Statistical_Significance.png/pdf - Effect size visualiza
 
 ## Study Summary:
 outputs/study_summary_YYYYMMDD_HHMMSS.md - Human-readable summary  
-outputs/IJDSA_Submission_Summary_*.json - Manuscript-ready summary  
+outputs/JILSA_Submission_Summary_*.json - Manuscript-ready summary  
 
 ## ⚙️ Configuration
 ### Path Configuration (Edit if needed):
@@ -214,9 +214,9 @@ Ensure all file paths are correct
 Verify MIMIC-IV data integrity  
 
 ## 📝 Citation
-If you use this framework or the "Reliability Cliff" methodology in your research, please cite:
+If you use this framework or the "Interoperability Debt" methodology in your research, please cite:
 
-A Simulation-Based Framework for Quantifying Predictive Model Robustness Under Progressive Structured Data Degradation. International Journal of Data Science and Analytics (IJDSA), Springer.
+The Impact of FHIR Interoperability Debt on Clinical AI Reliability: A Stress-Testing Framework and Simulation Study. Journal of Intelligent Learning Systems and Applications (JILSA), Springer.
 
 ## 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
@@ -228,7 +228,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 **HL7 FHIR Community**: For the interoperability standards
 
-**IJDSA Reviewers**: For their valuable feedback
+**JILSA Reviewers**: For their valuable feedback
 
 ## 📧 Contact
 For questions about this study or code:  
