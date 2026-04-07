@@ -84,7 +84,21 @@ DeBT-FHIR/
 ```
 
 ## 🔧 Detailed Usage
-## Option A: Direct Script Execution (Recommended for Reproduction)
+## Option A: Jupyter Notebooks (Recommended for Reproduction)
+```bash
+# Launch Jupyter and run notebooks interactively
+Then open and run: 
+# 1. MIMIC_IV_to_FHIR_Converter_9000.ipynb
+# 2. DeBT_FHIR_Interoperability_Debt_Study.ipynb
+```
+
+## Option B: Modular Execution
+### Using the modular codebase (for development/extensions)
+```bash
+python -m src.data_loader            # Test data loading
+python -m src.debt_injector          # Test debt injection
+```
+## Option C: Direct Script Execution 
 ### 1. Convert MIMIC-IV to FHIR (adjust paths as needed)
 ```bash
 python main_fhir_convert.py --base_dir "C:\mimic-iv-2.2" --target_patients 9000
@@ -92,19 +106,6 @@ python main_fhir_convert.py --base_dir "C:\mimic-iv-2.2" --target_patients 9000
 ### 2. Run the complete study
 ```bash
 python main_pipeline_combined.py --fhir_dir "C:\mimic-iv-2.2\mimic_fhir_9000_output" --n_patients 9000
-```
-## Option B: Modular Execution
-### Using the modular codebase (for development/extensions)
-```bash
-python -m src.data_loader            # Test data loading
-python -m src.debt_injector          # Test debt injection
-```
-## Option C: Jupyter Notebooks
-```bash
-# Launch Jupyter and run notebooks interactively
-Then open: 
-# 1. MIMIC_IV_to_FHIR_Converter_9000.ipynb
-# 2. DeBT_FHIR_Interoperability_Debt_Study.ipynb
 ```
 
 ## 📊 Output Files  
