@@ -8,7 +8,7 @@ This repository contains the official implementation of the DeBT-FHIR framework,
 
 ## 📌 Overview
 
-As healthcare moves toward FHIR-based AI ecosystems, the integrity of clinical data pipelines becomes critical. This study introduces a high-fidelity simulation framework to "stress-test" clinical AI before deployment. Using a cohort of 9,000 patients from the MIMIC-IV database, we simulate seven real-world degradation archetypes across eleven intensity levels.
+As healthcare moves toward FHIR-based AI ecosystems, the integrity of clinical data pipelines becomes critical. This study introduces a high-fidelity simulation framework to "stress-test" clinical AI before deployment. Using a cohort of 9,000 patients from the MIMIC-IV database, we simulate six real-world degradation archetypes across eleven intensity levels.
 
 ### Key Findings: The "Reliability Cliff"
 Our research identifies a critical threshold at 70% degradation intensity (L=0.7), where predictive reliability for mortality and readmission models fails catastrophically, dropping significantly outside baseline 95% confidence intervals.
@@ -162,17 +162,16 @@ print('✓ Baseline AUC - Readmission:', baseline[baseline['Task']=='30-DAY READ
 Source: MIMIC-IV v2.2 (9,000 patients)  
 Conversion: Custom Python pipeline to FHIR R4 bundles  
 Feature Extraction: Demographics, lab values, diagnoses, observation counts
-Outcomes: In-hospital mortality, 30-day readmission (validated extraction)
+Outcomes: In-hospital mortality, all-cause readmission (patients with multiple hospitalizations)
 
 ### 2. Interoperability Debt Simulation
-**Seven real-world debt types implemented:  
+**Six real-world debt types implemented:  
 Random missingness  
 Systematic missing data  
 Measurement noise  
 Severe data loss  
 Outlier corruption  
-Precision reduction (feature collapse)  
-Noisy imputation**
+Precision reduction (feature collapse)**
 
 ### 3. Machine Learning Pipeline
 **Models: Ensemble (Logistic Regression + Random Forest)  
