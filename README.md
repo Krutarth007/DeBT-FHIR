@@ -3,8 +3,8 @@
 
 This repository contains the official implementation of the DeBT-FHIR framework, used to quantify the sensitivity of clinical prediction models to data quality degradation in HL7 FHIR-based health information exchanges.
 
-> **"The Impact of FHIR Interoperability Debt on Clinical AI Reliability: A Stress-Testing Framework and Simulation Study"**  
-> *Journal of Intelligent Learning Systems and Applications*
+> **"Nonlinear Reliability Boundaries Under Progressive Structured Data Degradation: A Simulation-Based Benchmarking Framework for High-Performance Analytical Pipelines"**  
+> *Journal of Supercomputing*
 
 ## 📌 Overview
 
@@ -121,7 +121,7 @@ outputs/figures/Figure2_Statistical_Significance.png/pdf - Effect size visualiza
 
 ## Study Summary:
 outputs/study_summary_YYYYMMDD_HHMMSS.md - Human-readable summary  
-outputs/JILSA_Submission_Summary_*.json - Manuscript-ready summary  
+outputs/JOS_Submission_Summary_*.json - Manuscript-ready summary  
 
 ## ⚙️ Configuration
 ### Path Configuration (Edit if needed):
@@ -216,7 +216,7 @@ Verify MIMIC-IV data integrity
 ## 📝 Citation
 If you use this framework or the "Interoperability Debt" methodology in your research, please cite:
 
-The Impact of FHIR Interoperability Debt on Clinical AI Reliability: A Stress-Testing Framework and Simulation Study. Journal of Intelligent Learning Systems and Applications (JILSA), Springer.
+The Impact of FHIR Interoperability Debt on Clinical AI Reliability: A Stress-Testing Framework and Simulation Study. Journal of Supercomputing (JOS), Springer.
 
 ## 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
@@ -228,7 +228,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 **HL7 FHIR Community**: For the interoperability standards
 
-**JILSA Reviewers**: For their valuable feedback
+**JOS Reviewers**: For their valuable feedback
 
 ## 📧 Contact
 For questions about this study or code:  
