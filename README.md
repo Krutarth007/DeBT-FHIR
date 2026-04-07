@@ -182,7 +182,8 @@ Uncertainty: 500 bootstrap iterations for confidence intervals**
 ### 4. Statistical Analysis
 **Correlation: Spearman's rank correlation  
 Regression: Linear modeling of AUC vs. debt intensity  
-Effect Size: Cohen's d for clinical significance  
+Effect Size: Cohen's d for clinical significance
+Significance Criterion: Composite OR logic — p < 0.05 (Spearman), OR Cohen's d > 0.5, OR meaningful degradation (>0.02 AUC) at ≥5 debt levels
 Threshold Detection: Clinical meaningful degradation (>0.02 AUC drop)**
 
 ## 🐛 Troubleshooting
